@@ -36,15 +36,15 @@ const { title, description, pubDate, updatedDate, heroImage, slug } = Astro.prop
 				{heroImage && <img width={720} height={360} src={heroImage} alt="" transition:name={slug} />}
 				<h1 class="title">{title}</h1>
 				<FormattedDate date={pubDate} />
-				{
-					updatedDate && (
-						<div class="last-updated-on">
-							Last updated on <FormattedDate date={updatedDate} />
-						</div>
-					)
-				}
+				<!--// {-->
+				<!--// 	updatedDate && (-->
+				<!--// 		<div class="last-updated-on">-->
+				<!--// 			Last updated on <FormattedDate date={updatedDate} />-->
+				<!--// 		</div>-->
+				<!--// 	)-->
+				<!--// }-->
 				<hr />
-				<slot />
+				<!--<slot />-->
 			</article>
 		</main>
 		<Footer />
